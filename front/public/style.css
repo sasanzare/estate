@@ -1,0 +1,71 @@
+@font-face {
+    font-family: yekan;
+    src: url(./fonts/yekan.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Yekan-Bakh;
+    src: url(./fonts/Yekan-Bakh.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: sahel;
+    src: url(./fonts/sahel.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+font-family: Yekan-Bakh;
+}
+.dir-l{
+    direction: ltr;
+}
+.dir-r{
+    direction: rtl;
+}
+.backtotop {
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    right: 10px;
+    bottom: 30px;
+    height: 40px;
+    width: 40px;
+    background-image: linear-gradient(to bottom right, #39223f, #9a303a);
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    display: none;
+    z-index: 99;
+    padding-top: 3px;
+}
+.backtotop i {
+    font-size: 33px;
+}
+
+.border{
+    border: 1px solid;
+}
+
+.btn-es {
+    color: #fff!important;
+    background-color: #136a8a!important;
+    border-color: #136a8a!important;
+}
+.btn-es:hover {
+    color: #136a8a!important;
+    background-color: #fff!important;
+}
+.btn:focus{
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #2678718a!important;
+}
+
+.btn-border{
+    color:#136a8a!important; 
+    border-color: #136a8a!important;
+}
+.text-es{
+    color: #136a8a;
+}
