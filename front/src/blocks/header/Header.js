@@ -4,7 +4,7 @@ function Header() {
     <div className="Header">
         <Navbar className='dir-l shadow-sm' bg="white" expand="lg">
           <Container>
-            <a className="btn btn-es fw-bold px-4 pt-2" href="#home">ثبت آگهی</a>
+            <a className="btn btn-es fw-bold px-4 " href="#home">ثبت آگهی</a>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                   <Container className='pt-2'>
