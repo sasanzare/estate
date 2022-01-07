@@ -47,10 +47,6 @@ font-family: Yekan-Bakh;
     background: #136a8a;
     color: #fff;
 }
-.border{
-    border: 1px solid;
-}
-
 .btn-es {
     color: #fff!important;
     background-color: #136a8a!important;
@@ -77,8 +73,8 @@ font-family: Yekan-Bakh;
 .text-es{
     color: #136a8a;
 }
-.color-es{
-    background-color: #136a8a;
+.bg-es{
+    background: #136a8a;
 }
 .shadow-es{
     box-shadow: 1px 0px 15px #92929236;
@@ -94,3 +90,12 @@ font-family: Yekan-Bakh;
     color:#136a8a!important; 
     font-weight: 700!important;
 }
+.hr-title{
+    width: max-content;
+    margin-top: -31px!important;
+    z-index: 1;
+}
+.he-2{
+    height: 2px!important;
+}
+

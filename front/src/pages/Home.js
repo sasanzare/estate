@@ -2,6 +2,8 @@ import { Container,Row,Col } from 'react-bootstrap';
 import Header from '../blocks/header/Header.js';
 import Footer from '../blocks/footer/Footer';
 import Search from '../blocks/search/Search';
+import Title from '../microComponents/Title';
+import Carousel from '../blocks/carousel/Carousel';
 function Home() {
   return (
     <div className="Home">
@@ -13,7 +15,9 @@ function Home() {
                         خرید خانه و آپارتمان با املاک ساسان</h1>
                         <span>جستجو خود را آغاز کنید!</span>
                 </Col>
-                <Col sm={12}><Search/></Col>
+                <Col lg={10} sm={12} className='mx-auto'><Search/></Col>
+                <Title title="آژانس‌های املاک برتر"/>
+                <Col sm={12}><Carousel/></Col>
             </Row>
         </Container>
         <Footer/>
