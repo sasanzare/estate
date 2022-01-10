@@ -4,6 +4,7 @@ import Footer from '../blocks/footer/Footer';
 import Search from '../blocks/search/Search';
 import Title from '../microComponents/Title';
 import Carousel from '../blocks/carousel/Carousel';
+import Sugess from '../blocks/sugess/Sugess';
 function Home() {
   return (
     <div className="Home">
@@ -17,7 +18,9 @@ function Home() {
                 </Col>
                 <Col lg={10} sm={12} className='mx-auto'><Search/></Col>
                 <Title title="آژانس‌های املاک برتر"/>
-                <Col sm={12}><Carousel/></Col>
+                <Col sm={12} className='pt-5'><Carousel/></Col>
+                <Title title="املاک پیشنهادی ساسان"/>
+                <Col sm={12} className='pt-5'><Sugess/></Col>
             </Row>
         </Container>
         <Footer/>

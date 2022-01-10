@@ -98,4 +98,15 @@ font-family: Yekan-Bakh;
 .he-2{
     height: 2px!important;
 }
-
+.he-fit{
+    height: fit-content;
+}
+.f-12{
+    font-size: 12px!important;
+}
+.f-13{
+    font-size: 13px!important;
+}
+.text-gery{
+    color:#c8c7c7;
+}
