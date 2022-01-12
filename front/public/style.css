@@ -76,6 +76,9 @@ font-family: Yekan-Bakh;
 .bg-es{
     background: #136a8a;
 }
+.border-es{
+    border:1px solid#136a8a!important;
+}
 .shadow-es{
     box-shadow: 1px 0px 15px #92929236;
 }
@@ -109,4 +112,7 @@ font-family: Yekan-Bakh;
 }
 .text-gery{
     color:#c8c7c7;
+}
+.rounded-5{
+    border-radius: 0.5rem!important;
 }

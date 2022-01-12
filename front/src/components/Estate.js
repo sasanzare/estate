@@ -5,7 +5,7 @@ import Btn from '../microComponents/Btn'
 function Estate({img,title,profile,meter,time,type,bed,price,location}) { 
   return (
         <div className="p-2">
-        <div className="shadow-es text-center pb-2 overflow-hidden rounded">
+        <div className="shadow-es text-center pb-2 overflow-hidden rounded-3">
             <img src={img} className="w-100" height={155}/>
             <div className="d-flex justify-content-between px-2 pt-3 dir-r">
                 <div>
