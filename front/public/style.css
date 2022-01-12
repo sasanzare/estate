@@ -19,6 +19,9 @@
 *{
 font-family: Yekan-Bakh;
 }
+p{
+    text-align: justify;
+}
 .dir-l{
     direction: ltr;
 }
@@ -44,40 +47,40 @@ font-family: Yekan-Bakh;
     font-size: 33px;
 }
 ::selection {
-    background: #136a8a;
+    background: #8283bb;
     color: #fff;
 }
 .btn-es {
     color: #fff!important;
-    background-color: #136a8a!important;
-    border-color: #136a8a!important;
+    background-color: #6768AB!important;
+    border-color: #6768AB!important;
 }
 .btn-es:hover {
-    color: #136a8a!important;
+    color: #6768AB!important;
     background-color: #fff!important;
 }
 .btn:focus,select:focus{
     outline: 0;
-    box-shadow: 0 0 0 0.25rem #2678718a!important;
+    box-shadow: 0 0 0 0.25rem #6768ab8a!important;
 }
 
 .btn-border{
-    color:#136a8a!important; 
-    border-color: #136a8a!important;
+    color:#6768AB!important; 
+    border-color: #6768AB!important;
 }
 .btn-border:hover{
     color: #fff!important;
-    background-color: #136a8a!important;
-    border-color: #136a8a!important;
+    background-color: #6768AB!important;
+    border-color: #6768AB!important;
 }
 .text-es{
-    color: #136a8a;
+    color: #6768AB;
 }
 .bg-es{
-    background: #136a8a;
+    background: #6768AB;
 }
 .border-es{
-    border:1px solid#136a8a!important;
+    border:1px solid#6768AB!important;
 }
 .shadow-es{
     box-shadow: 1px 0px 15px #92929236;
@@ -86,11 +89,11 @@ font-family: Yekan-Bakh;
     background-position: left 0.75rem center!important;
     line-height: 2!important;
     background-image: url(./icon-selcet.svg)!important;
-    color:#136a8a!important; 
+    color:#6768AB!important; 
     font-weight: 700!important;
 }
 .form-select > option{
-    color:#136a8a!important; 
+    color:#6768AB!important; 
     font-weight: 700!important;
 }
 .hr-title{
@@ -109,6 +112,9 @@ font-family: Yekan-Bakh;
 }
 .f-13{
     font-size: 13px!important;
+}
+.f-15{
+    font-size: 15px!important;
 }
 .text-gery{
     color:#c8c7c7;

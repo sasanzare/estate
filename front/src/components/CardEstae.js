@@ -6,7 +6,7 @@ function Card({img,title}) {
         <div className="p-2">
         <div className="shadow-es text-center pb-2 overflow-hidden  rounded-3">
             <img src={img} className="w-100" height={150}/>
-            <p>{title}</p>
+            <p className='text-center'>{title}</p>
             <Rate rating={rating} onRating={(rate) => setRating(rate)} />
         </div>
 

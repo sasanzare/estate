@@ -6,11 +6,12 @@ import Title from '../microComponents/Title';
 import Carousel from '../blocks/carousel/Carousel';
 import Sugess from '../blocks/sugess/Sugess';
 import RegisterCard from '../components/RegisterCard';
+import ArticleCards from '../blocks/articleCards/Cards';
 function Home() {
   return (
     <div className="Home">
       <Header />
-        <Container  className="pt-5">
+        <Container  className="pt-5 pb-4">
             <Row>
                 <Col sm={12} className='text-center pt-3'>
                     <h1 className='h5 fw-bold' style={{ fontFamily: 'yekan'}}>
@@ -29,7 +30,10 @@ function Home() {
                 <Col md={6} sm={12} className='pt-5'>
                     <RegisterCard title="ثبت‌نام پیشرفته مشاورین املاک" content="برای درج رایگان انواع آگهی ملک ثبت‌نام کرده و وارد حساب کاربری خود شوید." btn="ثبت‌نام مشاور" />
                 </Col>
+                <Title title="مجله املاک ساسان"/>
+                
             </Row>
+            <ArticleCards/>
         </Container>
         <Footer/>
     </div>
