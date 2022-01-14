@@ -2,8 +2,8 @@ import { Navbar,Container,Nav,Row,Col } from 'react-bootstrap';
 import {Link} from "react-router-dom";
 function Header() {
   return (
-    <div className="Header">
-        <Navbar className='dir-l shadow-sm' bg="white" expand="lg">
+    <div className="Header position-fixed w-100">
+        <Navbar className='dir-l shadow-sm ' bg="white" expand="lg">
           <Container fluid>
             <a className="btn btn-es fw-bold px-5" href="#home">ثبت آگهی</a>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />

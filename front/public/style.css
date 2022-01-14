@@ -28,24 +28,7 @@ p{
 .dir-r{
     direction: rtl;
 }
-.backtotop {
-    display: none;
-    position: fixed;
-    cursor: pointer;
-    right: 10px;
-    bottom: 30px;
-    height: 40px;
-    width: 40px;
-    background-image: linear-gradient(to bottom right, #39223f, #9a303a);
-    transition: all 0.3s ease;
-    border-radius: 50%;
-    display: none;
-    z-index: 99;
-    padding-top: 3px;
-}
-.backtotop i {
-    font-size: 33px;
-}
+
 ::selection {
     background: #5657ac;
     color: #fff;
@@ -63,7 +46,9 @@ p{
     outline: 0;
     box-shadow: 0 0 0 0.25rem #6768ab8a!important;
 }
-
+.Header{
+    z-index: 100;
+}
 .btn-border{
     color:#6768AB!important; 
     border-color: #6768AB!important;

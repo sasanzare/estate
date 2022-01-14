@@ -12,7 +12,7 @@ function About() {
       'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. ',
   ]
   return (
-    <div className="About">
+    <div className="About mt-5">
         <BgTop img="./img/bg-about.png" content="درباره ما"/>
           <Container className="pt-5 pb-4">
             <Row>

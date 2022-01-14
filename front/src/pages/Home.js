@@ -7,7 +7,7 @@ import RegisterCard from '../components/RegisterCard';
 import ArticleCards from '../blocks/articleCards/Cards';
 function Home() {
   return (
-        <Container  className="Home pt-5 pb-4">
+        <Container  className="Home pt-5 mt-5 pb-4">
             <Row>
                 <Col sm={12} className='text-center pt-3'>
                     <h1 className='h5 fw-bold' style={{ fontFamily: 'yekan'}}>
