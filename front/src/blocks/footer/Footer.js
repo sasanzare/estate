@@ -4,17 +4,41 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faInstagram,faFacebook,faPinterest} from '@fortawesome/free-brands-svg-icons'
 function Footer() {
   const list1 = [
-      'درباره‌ما',
-      'ارتباط با ما',
-      'مجله املاک',
-      'تبلیغات',
+        {
+          'title': 'درباره ما',
+          'href' : '/about',
+        },
+        {
+          'title': 'ارتباط‌ باما',
+          'href' : '/contact',
+        },
+        {
+          'title': 'مجله املاک',
+          'href' : '/articles',
+        },
+        {
+          'title': 'تبلیغات',
+          'href' : '',
+        },
+      
   ];
   const list2 = [
-      'ورود و ثبت‌‌نام مشاورین املاک',
-      'ورود و ثبت‌نام کاربر',
-      'قوانین درج‌ ‌آگهی',
-      'سوالات متداول',
-     
+    {
+      'title': 'ورود و ثبت‌‌نام مشاورین املاک',
+      'href' : ''
+    },
+    {
+      'title':'ورود و ثبت‌نام کاربر',
+      'href' : ''
+    },
+    {
+      'title':'قوانین درج‌ ‌آگهی',
+      'href' : ''
+    },
+    {
+      'title': 'سوالات متداول',
+      'href' : ''
+    },
   ];
   return (
         <Container fluid className='Footer bg-light mt-5 px-lg-4 pt-3'>
@@ -32,7 +56,7 @@ function Footer() {
             </Col>
             <Col sm={12} className='pt-3 px-4'>
               <div className='d-flex flex-md-row flex-column text-sm-center justify-content-md-between border-top border-3 pt-3'>
-                  <p className='text-sm-center'>کلیه حقوق این سایت متعلق به گروه ساسان زاع است.</p>
+                  <p className='text-sm-center'>کلیه حقوق این سایت متعلق به گروه ساسان زارع است.</p>
                   <div>
                     <FontAwesomeIcon className='text-secondary h4 ms-3' icon={faPinterest} />
                     <FontAwesomeIcon className='text-secondary h4 ms-3' icon={faInstagram} />

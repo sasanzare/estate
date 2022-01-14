@@ -1,6 +1,4 @@
 import { Container,Row,Col } from 'react-bootstrap';
-import Header from '../blocks/header/Header.js';
-import Footer from '../blocks/footer/Footer';
 import Search from '../blocks/search/Search';
 import Title from '../microComponents/Title';
 import Carousel from '../blocks/carousel/Carousel';
@@ -9,9 +7,7 @@ import RegisterCard from '../components/RegisterCard';
 import ArticleCards from '../blocks/articleCards/Cards';
 function Home() {
   return (
-    <div className="Home">
-      <Header />
-        <Container  className="pt-5 pb-4">
+        <Container  className="Home pt-5 pb-4">
             <Row>
                 <Col sm={12} className='text-center pt-3'>
                     <h1 className='h5 fw-bold' style={{ fontFamily: 'yekan'}}>
@@ -35,8 +31,6 @@ function Home() {
             </Row>
             <ArticleCards/>
         </Container>
-        <Footer/>
-    </div>
   );
 }
 

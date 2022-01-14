@@ -1,4 +1,5 @@
 import { Navbar,Container,Nav,Row,Col } from 'react-bootstrap';
+import {Link} from "react-router-dom";
 function Header() {
   return (
     <div className="Header">
@@ -35,8 +36,8 @@ function Header() {
                               </Nav.Item>
                             </Nav>
                           </Col>
-                          <Col sm className='dir-r pt-1 text-es fw-bold h3 text-center'>
-                            <span>Estate</span>
+                          <Col sm className='dir-r pt-1  fw-bold h3 text-center'>
+                            <Link to="/" className='text-decoration-none text-es'>Amlak Sasan</Link>
                           </Col>
                         </Row>
                   </Container>

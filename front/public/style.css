@@ -47,7 +47,7 @@ p{
     font-size: 33px;
 }
 ::selection {
-    background: #8283bb;
+    background: #5657ac;
     color: #fff;
 }
 .btn-es {
@@ -116,9 +116,27 @@ p{
 .f-15{
     font-size: 15px!important;
 }
+.f-25{
+    font-size: 25px!important;
+}
 .text-gery{
     color:#c8c7c7;
 }
 .rounded-5{
     border-radius: 0.5rem!important;
+}
+
+.bg-cover{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+.lh-xl{
+    line-height: 2.5;
+}
+.text-shadow{
+    text-shadow: 3px 3px #6d6c6c;
+}
+a:hover{
+    color: #6869cb!important;
 }
