@@ -4,6 +4,7 @@ import Header from './blocks/header/Header.js';
 import Footer from './blocks/footer/Footer';
 import Home from './pages/Home'
 import About from './pages/About'
+import Contact from './pages/Contact'
 import Backtotop from "./components/backtotop/Backtotop";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="contact" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="articles" element={<About />} />
       </Routes>
       <Footer/>

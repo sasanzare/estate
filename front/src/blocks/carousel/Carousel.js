@@ -40,19 +40,54 @@ function Carousel() {
             }
           ]
       };
+      const offices = [
+        {
+          'title': 'آژانس املاک سینا',
+          'img': './img/card1.png'
+        },
+        {
+          'title': 'آژانس املاک صادقیه',
+          'img': './img/card2.png'
+        },
+        {
+          'title': 'آژانس املاک خروشان',
+          'img': './img/card3.png'
+        },
+        {
+          'title': 'آژانس املاک فدک',
+          'img': './img/card4.png'
+        },
+        {
+          'title': 'آژانس املاک بهینه',
+          'img': './img/card5.png'
+        },
+        {
+          'title': 'آژانس املاک سینا',
+          'img': './img/card1.png'
+        },
+        {
+          'title': 'آژانس املاک صادقیه',
+          'img': './img/card2.png'
+        },
+        {
+          'title': 'آژانس املاک خروشان',
+          'img': './img/card3.png'
+        },
+        {
+          'title': 'آژانس املاک فدک',
+          'img': './img/card4.png'
+        },
+        {
+          'title': 'آژانس املاک بهینه',
+          'img': './img/card5.png'
+        },
+      ]
   return (
-    <Slider {...settings}>
-        <Card img="./img/card1.png" title="آژانس املاک سینا"/>
-        <Card img="./img/card2.png" title="آژانس املاک صادقیه"/>
-        <Card img="./img/card3.png" title="آژانس املاک خروشان"/>
-        <Card img="./img/card4.png" title="آژانس املاک فدک"/>
-        <Card img="./img/card5.png" title="آژانس املاک بهینه"/>
-        <Card img="./img/card1.png" title="آژانس املاک سینا"/>
-        <Card img="./img/card2.png" title="آژانس املاک صادقیه"/>
-        <Card img="./img/card3.png" title="آژانس املاک خروشان"/>
-        <Card img="./img/card4.png" title="آژانس املاک فدک"/>
-        <Card img="./img/card5.png" title="آژانس املاک بهینه"/>
-  </Slider>
+      <Slider {...settings}>
+          {offices.map((office)=>(
+              <Card img={office.img} title={office.title}/>
+          ))} 
+      </Slider>
   );
 }
 

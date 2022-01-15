@@ -1,7 +1,6 @@
-import { Container,Row,Col } from 'react-bootstrap';
+import { Container,Row,Col,ListGroup } from 'react-bootstrap';
 import BgTop from '../components/bgTop/BgTop';
 import Clip from '../components/clip/Clip';
-import {ListGroup} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faCheckSquare} from '@fortawesome/free-solid-svg-icons'
 function About() { 

@@ -1,5 +1,5 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faHome,faBed,faLocationArrow,faColumns,faClock,faPhone} from '@fortawesome/free-solid-svg-icons'
+import {faHome,faBed,faMapMarkerAlt,faColumns,faClock,faPhone} from '@fortawesome/free-solid-svg-icons'
 import Btn from '../microComponents/Btn'
 
 function Estate({img,title,profile,meter,time,type,bed,price,location}) { 
@@ -26,7 +26,7 @@ function Estate({img,title,profile,meter,time,type,bed,price,location}) {
             <div className="d-flex justify-content-between px-2 pt-1 dir-r">
                 <div>
                     <FontAwesomeIcon
-                    icon={faLocationArrow}
+                    icon={faMapMarkerAlt}
                     className='text-gery ms-1'
                     />
                     <span>{location}</span>

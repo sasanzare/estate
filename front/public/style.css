@@ -42,9 +42,12 @@ p{
     color: #6768AB!important;
     background-color: #fff!important;
 }
-.btn:focus,select:focus{
+.btn:focus,select:focus,input:focus,textarea:focus{
     outline: 0;
     box-shadow: 0 0 0 0.25rem #6768ab8a!important;
+}
+.email:focus{
+    direction: ltr;
 }
 .Header{
     z-index: 100;
@@ -101,11 +104,17 @@ p{
 .f-15{
     font-size: 15px!important;
 }
+.f-22{
+    font-size: 22px!important;
+}
 .f-25{
     font-size: 25px!important;
 }
 .text-gery{
     color:#c8c7c7;
+}
+.rounded-4{
+    border-radius: 0.4rem!important;
 }
 .rounded-5{
     border-radius: 0.5rem!important;
@@ -117,7 +126,7 @@ p{
     height: 250px;
 }
 .lh-xl{
-    line-height: 2.5;
+    line-height: 2.5!important;
 }
 .text-shadow{
     text-shadow: 3px 3px #6d6c6c;
