@@ -42,7 +42,7 @@ p{
     color: #6768AB!important;
     background-color: #fff!important;
 }
-.btn:focus,select:focus,input:focus,textarea:focus{
+.btn:focus,select:focus,input:focus,textarea:focus,i:focus{
     outline: 0;
     box-shadow: 0 0 0 0.25rem #6768ab8a!important;
 }

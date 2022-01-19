@@ -1,11 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Backtotop from "./components/backtotop/Backtotop";
 import Header from './blocks/header/Header.js';
 import Footer from './blocks/footer/Footer';
 import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import Backtotop from "./components/backtotop/Backtotop";
+import New from "./pages/New";
+import Articles from "./pages/Articles";
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="articles" element={<About />} />
+        <Route path="/new" element={<new />} />
+        <Route path="/articles" element={<Articles />} />
+        {/* <Route path="/estate" element={<Estate />} /> */}
       </Routes>
       <Footer/>
     </div>
