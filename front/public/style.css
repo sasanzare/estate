@@ -134,3 +134,6 @@ p{
 a:hover{
     color: #6869cb!important;
 }
+.vh-95{
+    height: 95vh;
+}

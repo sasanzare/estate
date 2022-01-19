@@ -6,9 +6,9 @@ import Footer from './blocks/footer/Footer';
 import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import New from "./pages/New";
+// import New from "./pages/New";
 import Articles from "./pages/Articles";
-
+import NotFound from "./pages/404/NotFound";
 function App() {
   return (
     <div className="App overflow-hidden">
@@ -20,7 +20,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/new" element={<new />} />
         <Route path="/articles" element={<Articles />} />
-        {/* <Route path="/estate" element={<Estate />} /> */}
+        <Route path="*"  element={<NotFound/>} />
       </Routes>
       <Footer/>
     </div>
