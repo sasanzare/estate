@@ -1,0 +1,14 @@
+::-webkit-input-placeholder{ 
+    color: #000000a6!important;
+  }
+  :-ms-input-placeholder { 
+    color: #000000a6!important;
+  }
+  ::placeholder {
+    color: #000000a6!important;
+  }
+
+  .form-select,.form-es {
+    color: #000000a6!important;
+}
+

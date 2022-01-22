@@ -1,0 +1,17 @@
+
+.ImgUpload{
+    padding: 0.375rem 1.25rem 0.18rem 1.25rem!important;
+}
+.add{
+    color: #000000a6!important;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .grid-item {
+    padding: 7px;
+    text-align: center;
+  }

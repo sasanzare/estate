@@ -79,6 +79,7 @@ p{
     background-image: url(./icon-selcet.svg)!important;
     color:#6768AB!important; 
     font-weight: 700!important;
+    padding: 0.375rem 1.25rem !important;
 }
 .form-select > option{
     color:#6768AB!important; 
@@ -136,4 +137,11 @@ a:hover{
 }
 .vh-95{
     height: 95vh;
+}
+
+.form-es{
+    line-height: 2!important;
+    color: #6768AB!important;
+    font-weight: 700!important;
+    padding: 0.375rem 1.25rem!important;
 }

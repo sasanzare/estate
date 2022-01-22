@@ -32,7 +32,7 @@ function Header() {
                                 <Nav.Link eventKey="link-2">مناقصه</Nav.Link>
                               </Nav.Item>
                               <Nav.Item as="li">
-                                <Nav.Link eventKey="link-2">بلاگ</Nav.Link>
+                                <Nav.Link eventKey="link-2">مجله</Nav.Link>
                               </Nav.Item>
                             </Nav>
                           </Col>
