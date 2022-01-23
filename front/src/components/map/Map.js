@@ -1,14 +1,73 @@
-import Iframe from 'react-iframe'
-function MyMap() { 
+import { useState,useEffect } from 'react';
+import ReactMapGL,{Marker,Popup} from 'react-map-gl';
+import location from './Map.json';
+import Pin from './Pin';
+// import * as React from 'react';
+
+
+const MAPBOX_TOKEN =  "pk.eyJ1IjoicGFyc2FraG9qYXN0ZSIsImEiOiJja3lxbngzYTQwbTk5Mm9tdmNybjJtZ2lsIn0.wMg-mNdJoLMVWMuD8TFvSQ";
+
+
+
+function Map() { 
+  const [viewport, setViewport] = useState({
+    width: "100%",
+    height: 400,
+    latitude: 29.6314,
+    longitude: 52.5192,
+    zoom: 11,
+  });
+  const [selectedLocation,setSelectedLocation] = useState(null);
+  const clickHandeler = (district)=>{
+    setSelectedLocation(district);
+  }
+  useEffect(()=>{
+    const listener = event =>{
+      if(event.key === "Escape"){
+        setSelectedLocation(null)
+      }
+    }
+    window.addEventListener("keydown",listener);
+    return()=>{
+      window.removeEventListener("keydown",listener);
+    }
+  },[])
+
+  
   return (
-            <Iframe  className="MyMap rounded-3"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d433.5101816179582!2d52.51992661679236!3d29.630377444816173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snl!4v1642235184475!5m2!1sen!2snl" 
-            width="100%"
-            height="450px"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"/>
+    <ReactMapGL className='rounded'
+      {...viewport}
+      onViewportChange={nextViewport => setViewport(nextViewport)}
+      mapboxApiAccessToken={MAPBOX_TOKEN}
+      mapStyle='mapbox://styles/parsakhojaste/ckyqp57zt0hug14oav773sq17'
+    >
+      {
+       location.RECORDS.map((district)=>(
+          <Marker 
+            key={district.id}
+            latitude={district.geometry.cordinates[0]} 
+            longitude={district.geometry.cordinates[1]}
+            
+          >
+          <Pin clicked={()=>clickHandeler(district)} /> 
+          </Marker>
+        ))
+      }
+      {
+        selectedLocation?
+        <Popup
+        latitude={selectedLocation.geometry.cordinates[0]} 
+        longitude={selectedLocation.geometry.cordinates[1]}
+        onClose={()=>setSelectedLocation(null)}
+        >
+          {selectedLocation.name}
+        </Popup>
+        :null
+      }
+
+
+    </ReactMapGL>
   );
 }
 
-export default MyMap;
+export default Map;

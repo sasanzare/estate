@@ -21,10 +21,10 @@ const ImgUpload = () => {
 	};
 
 	return (
-            <div className="ImgUpload col-lg-5 col-md-6 col-sm-9 col-12 mb-3 mx-auto shadow-es rounded">
+            <div className="ImgUpload col-lg-5 col-md-6 col-sm-9 col-12 mb-4 mx-auto shadow-es rounded">
                     <input className='d-none' type="file" id="file" multiple onChange={handleImageChange} />
                     <label htmlFor="file" className="d-flex justify-content-between align-items-center ">
-                        <span className="material-icons h6 add fw-bold m-0">افزودن تصاویر</span>
+                        <span className="h6 add fw-bold m-0">افزودن تصاویر</span>
                         <span className='h2 text-es fw-bold m-0'>+</span>
                     </label>
                     <div className="row">

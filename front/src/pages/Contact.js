@@ -4,7 +4,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faMobileAlt,faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
 import {faInstagram} from '@fortawesome/free-brands-svg-icons'
 import Btn from '../microComponents/Btn';
-import MyMap from '../components/map/Map';
+import Map from '../components/map/Map';
 function Contact() { 
 
   return (
@@ -54,7 +54,7 @@ function Contact() {
                 <h3 className='text-center  h4 pb-4 mt-5 pt-5'>ما را روی نقشه ببینید.</h3>
                
                 <Col sm={12} className='pb-3'>
-                  <MyMap/>
+                  <Map/>
 
                 </Col>
             </Row>

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "react-map-gl-geocoder": "^2.2.0"
+  }
+}

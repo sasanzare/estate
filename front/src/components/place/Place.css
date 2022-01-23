@@ -1,0 +1,5 @@
+@media only screen and (max-width: 384px) {
+    .mapboxgl-ctrl-top-right .mapboxgl-ctrl {
+        margin: 10px 2px 0 0!important;
+    }
+  }
