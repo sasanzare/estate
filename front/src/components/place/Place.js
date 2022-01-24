@@ -3,9 +3,9 @@ import React, { useState, useRef, useCallback } from "react";
 import ReactMapGL from "react-map-gl";
 import Geocoder from "react-map-gl-geocoder";
 import './Place.css'
+import token from "../../microComponents/mapBoxToken.json";
 
-const MAPBOX_TOKEN =  "pk.eyJ1IjoicGFyc2FraG9qYXN0ZSIsImEiOiJja3lxbngzYTQwbTk5Mm9tdmNybjJtZ2lsIn0.wMg-mNdJoLMVWMuD8TFvSQ";
-
+const  MAPBOX_TOKEN = token.data[0];
 
 const Place = () => {
   const [viewport, setViewport] = useState({
@@ -22,7 +22,6 @@ const Place = () => {
   const handleGeocoderViewportChange = useCallback(
     (newViewport) => {
       const geocoderDefaultOverrides = { transitionDuration: 1000 };
-    //   console.log(newViewport)
       return handleViewportChange({
         ...newViewport,
         ...geocoderDefaultOverrides

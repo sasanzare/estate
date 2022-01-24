@@ -2,12 +2,9 @@ import { useState,useEffect } from 'react';
 import ReactMapGL,{Marker,Popup} from 'react-map-gl';
 import location from './Map.json';
 import Pin from './Pin';
-// import * as React from 'react';
+import token from '../../microComponents/mapBoxToken.json'
 
-
-const MAPBOX_TOKEN =  "pk.eyJ1IjoicGFyc2FraG9qYXN0ZSIsImEiOiJja3lxbngzYTQwbTk5Mm9tdmNybjJtZ2lsIn0.wMg-mNdJoLMVWMuD8TFvSQ";
-
-
+const  MAPBOX_TOKEN = token.data[0];
 
 function Map() { 
   const [viewport, setViewport] = useState({
